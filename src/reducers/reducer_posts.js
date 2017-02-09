@@ -1,4 +1,4 @@
-import * from '../actions/posts';
+import * as actions from '../actions/posts';
 
 const INITIAL_STATE = {
             postsList: {posts: [], error:null, loading: false},
@@ -8,7 +8,7 @@ const INITIAL_STATE = {
 };
 
 export default function(state = INITIAL_STATE, action) {
-
+  
   switch(action.type) {
     default:
       return state;

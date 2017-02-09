@@ -6,7 +6,8 @@ export const FETCH_POSTS_SUCCESS = 'FETCH_POSTS_SUCCESS';
 export const FETCH_POSTS_FAILURE = 'FETCH_POSTS_FAILURE';
 export const RESET_POSTS = 'RESET_POSTS';
 
-const ROOT_URL = location.href.indexOf('localhost') > 0 ? 'http://localhost:3000/api' : '/api';
+const ROOT_URL = location.href.indexOf('localhost') > 0 ? 'http://localhost:5100/api' : '/api';
+
 export function fetchPosts() {
   const request = axios({
     method: 'get',
